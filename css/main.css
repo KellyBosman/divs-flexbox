@@ -98,51 +98,89 @@ textarea {
 
 html {
   background-color: #fff;
+  font-size: 16px;
   height: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
+  padding: 2rem;
+  font-size: 1.25rem;
   height: 100%;
+}
+
+header, footer {
+  background: #1A3E4C;
+  color: #fff;
+  height: 80px;
+  width: 100%;
+}
+
+main {
+  background: #67AFCB;
+  color: #fff;
+  height: 250px;
+  width: 100%;
+}
+
+header, footer, main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
   font-weight: 700;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-item {
   display: flex;
+  flex: 1 175px;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
   background-color: #008B8B;
-  height: auto;
+  height: 350px;
   width: 30%;
-  border: 0.25em solid black;
 }
 
-.div-1 h2, .div-2 h2, .div-3 h2 {
+#div-1,
+#div-2,
+#div-3 {
+  border-top: 0.25rem solid #092834;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+#div-2 {
+  border-left: 0.25rem solid #092834;
+  border-right: 0.25rem solid #092834;
+}
+
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-family: 'Lora' , sans-serif;
+  font-size: 3rem;
 }
 
-.div-1 p, .div-2 p, .div-3 p {
+p {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
-  font-size: 0.75em;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 1em;
+  margin: 0 0.25rem 0 0.25rem;
 }
 
 
